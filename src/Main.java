@@ -5,7 +5,7 @@ public class Main {
         team.add(new Person("jack1",31));
         team.add(new Person("jack2",32));
 
-        team.print();
+//        team.print();
 
         System.out.println("---------------------");
         Team team1 = new Team(1000);
@@ -16,12 +16,18 @@ public class Main {
         team1.add(new Person("john4",30));
         team1.add(new Person("john5",30));
         team1.add(new Person("jack6",30));
-        team1.print();
+//        team1.print();
 
 
         //-----------------------------------------------------------------------
         System.out.println(team1.size());
-        System.out.println(team1.get(2));
+        try {
+            System.out.println(team1.get(2));
+        } catch (Exception e) {
+            System.out.println("ERRROR!");
+        }
+        System.out.println("-------------------");
+
         System.out.println(team1);
     }
 }

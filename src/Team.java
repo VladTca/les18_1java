@@ -28,7 +28,7 @@ public class Team {
         return size;
     }
 
-    public Person get(int index){
+    public Person get(int index) {
         return array[index];
     }
 
@@ -36,8 +36,10 @@ public class Team {
     @Override
 
     public String toString() {
-        return "Team{" +
-                "array=" + Arrays.toString(array) +
-                '}';
+        String reusult = "Team:";
+        for (int i = 0; i < size; i++) {
+            reusult += array[i];
+        }
+        return reusult;
     }
 }
